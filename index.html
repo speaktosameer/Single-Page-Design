@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		*{
+			box-sizing: border-box;
+			font-family: 'Lato',sans-serif;
+		}
+		html,body{
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: #222;
+		}
+		.wrapper{
+			display: flex;
+			width: 80%;
+			justify-content: space-around;
+		}
+		.card{
+			width: 280px;
+			height: 360px;
+			padding: 2rem 1rem;
+			background: #fff;
+			position: relative;
+			display: flex;
+			align-items: flex-end;
+			box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+			transition: 0.5s ease-in-out;
+		}
+		.card:hover{
+			transform: translateY(20px);
+		}
+		.card:before{
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(to bottom,rgba(0,176,155,0.5),rgba(150,201,61,1));
+			z-index: 2;
+			transition: 0.5s all;
+			opacity: 0;
+		}
+		.card:hover:before{
+			opacity: 1;
+		}
+		.card img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.card .info{
+			position: relative;
+			z-index: 3;
+			color: #fff;
+			opacity: 0;
+			transform: translateY(30px);
+			transition: 0.5s all;
+		}
+		.card:hover .info{
+			opacity:1;
+			transform: translateY(0px);
+
+		}
+		.card .info h1{
+			margin: 0;
+		}
+		.card .info p{
+			letter-spacing: 1px;
+			font-size: 15px;
+			margin-top: 8px;
+			margin-bottom: 20px;
+		}
+		.card .info .btn{
+			text-decoration: none;
+			padding: 0.5rem 1rem;
+			background: #fff;
+			color:#000;
+			font-size: 14px;
+			font-weight: bold;
+			cursor: pointer;
+			transition: 0.4s ease-in-out;
+
+		}
+		.btn:hover{
+			box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+
+		}
+
+	</style>
+	<title>Main Page</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="card">
+			<img src="https://images.unsplash.com/photo-1482148454461-aaedae4b30bb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fG5hdHVyYWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80" alt="">
+			<div class="info">
+				<h1>Profile with Data</h1>
+				<p>This webpage contains profile detail information</p>
+				<a href="profile_with_data_and_skills.html" target="_blank" class="btn">Read More</a>
+			</div>
+		</div>
+		<div class="card">
+			<img src="https://images.unsplash.com/photo-1482148454461-aaedae4b30bb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fG5hdHVyYWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80" alt="">
+			<div class="info">
+				<h1>Single Scroll</h1>
+				<p>This web page contain a single Scroll to another page</p>
+				<a href="SingleScroll.html" class="btn" target="_blank">Read More</a>
+			</div>
+		</div>
+		<div class="card">
+			<img src="https://images.unsplash.com/photo-1482148454461-aaedae4b30bb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fG5hdHVyYWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80" alt="">
+			<div class="info">
+				<h1>Slider Carousel</h1>
+				<p>This webpage contains a beautiful carousel</p>
+				<a href="slider.html" target="_blank" class="btn">Read More</a>
+			</div>
+		</div>
+		
+	</div>
+	
+</body>
+</html>
