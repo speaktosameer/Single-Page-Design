@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Single Scroll</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="container"> 
+          <section class="one">
+		  <h1>First</h1>
+		  </section>
+		  <section class="two">
+		  <h1>Second</h1>
+		  </section>
+		  <section class="three">
+		  <h1>Third</h1>
+		  </section>
+		  <section class="four">
+		  <h1>Fourth</h1>
+		  </section>
+    </div>
+
+<style type="text/css">
+*{
+    margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	font-family:san-serif;
+	color:white;
+}
+.container{
+scroll-snap-type:y mandatory;
+overflow-y:scroll;
+height:100vh;
+}
+section{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+scroll-snap-align:start;
+}
+.one{
+background-color:green;
+}
+.two{
+background-color:yellow;
+}
+.three{
+background-color:red;
+}
+.four{
+background-color:blue;
+}
+
+
+
+
+</style>
+
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
